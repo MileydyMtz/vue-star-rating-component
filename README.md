@@ -5,10 +5,45 @@ El componente StarRating es un componente reutilizable de Vue.js que permite a l
 
 ## Tecnologias usadas
 A continuación se enlistan las tecnologías y librerías utilizadas en el desarrollo de este componente:
-* Vue 3
+* Vue 3 en Vite
 * Preprocesador SCSS
 * Vue Test Utils
 * Vitest
+  
+## Instalacion
+### Configuración IDE recomendada
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+### Personalizar configuración
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+### Configuración del Proyecto
+```sh
+npm install
+```
+
+#### Compilar y Recargar en Caliente para Desarrollo
+```sh
+npm run dev
+```
+
+#### Compilar y Minificar para Producción
+```sh
+npm run build
+```
+
+#### Ejecutar Pruebas Unitarias con [Vitest](https://vitest.dev/)
+```sh
+npm run test:unit
+```
+
+#### Lint con [ESLint](https://eslint.org/)
+```sh
+npm run lint
+```
+
     	
 ## Caracteristicas del componente
 ### CSS
@@ -47,9 +82,16 @@ Al importar y utilizar el componente de StarRating, se visualiza de la siguiente
 
 **Visualización de las estrellas vacias**
 
+![stars](https://github.com/MileydyMtz/vue-star-rating-component/assets/85470047/46ebd468-bcbc-4db1-a4d3-226c0a576bb0)
+
 **Visualizacion de las estrellas al pasar el mouse sobre ellas**
 
+![hover select stars](https://github.com/MileydyMtz/vue-star-rating-component/assets/85470047/215b462e-eead-4948-bf91-cb840d612a0b)
+
 **Visualizacion de las estrellas al seleccionarlas**
+
+![selected stars](https://github.com/MileydyMtz/vue-star-rating-component/assets/85470047/d0046fab-cba5-49fa-b0dd-ab44f035c585)
+
 
 ## Pruebas
 Las pruebas se han implementado utilizando vitest y vue-test-utils. A continuación se presentan las pruebas implementadas:
