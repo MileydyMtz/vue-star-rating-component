@@ -53,7 +53,7 @@ Al importar y utilizar el componente de StarRating, se visualiza de la siguiente
 
 ![hover select stars](https://github.com/MileydyMtz/vue-star-rating-component/assets/85470047/215b462e-eead-4948-bf91-cb840d612a0b)
 
-**Visualizacion de las estrellas al seleccionarlas**
+**Estrellas seleccionadas**
 
 ![selected stars](https://github.com/MileydyMtz/vue-star-rating-component/assets/85470047/d0046fab-cba5-49fa-b0dd-ab44f035c585)
 
