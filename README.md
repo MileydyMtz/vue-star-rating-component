@@ -13,16 +13,25 @@ A continuación, se enlistan las tecnologías y librerías utilizadas en el desa
 * ESLint
     	
 ## Características del componente
-### CSS
-- Los estilos de StarRating están definidos en la sección de <style> y usan la extensión .scss.
-- Se pueden modificar las variables *$star-color* y *$star-filled-color* para cambiar el color de las estrellas sin seleccionar y el color que obtienen después de seleccionarlas o al pasar el cursor encima.
-- Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
+### Métodos
+El componente StarRating maneja dos métodos:
+* **setRating(rating)**: Este método se llama cuando un usuario hace clic en una estrella. Rellena todas las estrellas hasta la que el usuario ha seleccionado, estableciendo el estado de las estrellas en *true* hasta el índice seleccionado.
+* **setHover(rating)**: Este método se llama cuando un usuario pasa el cursor sobre una estrella. Rellena temporalmente todas las estrellas hasta la que el usuario ha pasado el cursor, estableciendo el estado de *hoverStars* en *true* hasta el índice seleccionado. 
+    
+### Propiedad Computada
+* **finalStars()**: Es una propiedad calculada que combina las matrices *stars* y *hoverStars*. Crea una nueva matriz donde cada elemento es verdadero si el elemento correspondiente en *stars* o *hoverStars* es verdadero. Esta matriz se usa para determinar qué estrellas se deben llenar en la plantilla.
 
 ### Notas
 Este componente:
 - Encapsula el estado: El estado de la calificación y las estrellas en las que el usuario se desplaza se almacenan y se manejan internamente dentro del componente. Esto significa que este componente no emite eventos ni acepta props, lo que simplifica su uso.
 - El componente muestra cinco estrellas por defecto. Cada estrella representa una calificación que los usuarios pueden seleccionar.
 - Las estrellas se agrandan y cambian de color al desplazarse y al seleccionar una calificación.
+
+### CSS
+- Los estilos de StarRating están definidos en la sección de <style> y usan la extensión .scss.
+- Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
+- Se pueden modificar las variables *$star-color* y *$star-filled-color* para cambiar el color de las estrellas sin seleccionar y el color que obtienen después de seleccionarlas o al pasar el cursor encima.
+- La clase *star--filled* se aplica si la estrella correspondiente en la matriz finalStars es verdadera.
 
 ## Uso del componente
 Para utilizar este componente, primero se debe descargar el archivo *StarRating.vue* que se encuentra dentro de *src/components* y agregarlo al proyecto donde se reutilizara. 
