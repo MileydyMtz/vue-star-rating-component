@@ -5,7 +5,7 @@ El componente StarRating es un componente reutilizable de Vue.js que permite a l
 
 ## Tecnologías usadas
 A continuación, se enlistan las tecnologías y librerías utilizadas en el desarrollo de este componente:
-* Vue 3 en Vite
+* Vue 3
 * Preprocesador SCSS
 * Vue Test Utils
 * Vitest
@@ -54,7 +54,7 @@ export default {
 ```
 
 ## Demostración
-Al importar y utilizar el componente de StarRating, se visualiza de la siguiente manera:
+La implementación de este componente se puede ver de la siguiente forma:
 
 **Visualización de las estrellas vacías**
 
